@@ -1,0 +1,80 @@
+# 🚨 IMPORTANT: How to Deploy Your Website
+
+## The Problem
+You're seeing a blank page because GitHub Pages needs the actual website files from the `/app/frontend/build/` folder.
+
+## ✅ THE SOLUTION (3 Simple Steps)
+
+### Step 1: Get Your Files
+In Emergent, go to the file browser and navigate to:
+```
+/app/frontend/build/
+```
+
+You'll see:
+- `index.html` ← Download this
+- `static/` folder ← Download this entire folder
+- `DEPLOY_INSTRUCTIONS.html` ← Open this for visual guide
+
+### Step 2: Upload to GitHub
+1. Go to your GitHub repository
+2. Click "Add file" → "Upload files"
+3. Drag and drop:
+   - The `index.html` file
+   - The entire `static` folder (must keep folder structure!)
+4. Commit the changes
+
+### Step 3: Enable GitHub Pages
+1. In your repo, go to **Settings** → **Pages**
+2. Source: **Deploy from a branch**
+3. Branch: **main**
+4. Folder: **/ (root)**
+5. Click **Save**
+
+### Step 4: Wait & Visit
+Wait 2-3 minutes, then visit:
+```
+https://[your-username].github.io/[repo-name]/
+```
+
+## 📁 Required File Structure in GitHub
+```
+your-repo/
+├── index.html
+└── static/
+    ├── css/
+    │   └── main.b585a587.css
+    └── js/
+        └── main.beefced7.js
+```
+
+## 🔴 Common Mistakes
+- ❌ Only uploading index.html without the static folder
+- ❌ Uploading the source code instead of the build folder
+- ❌ Not enabling GitHub Pages in settings
+- ❌ Repository is set to Private (needs to be Public)
+
+## ✅ What Should Happen
+Once deployed correctly, you'll see:
+- Beautiful hero section with photography background
+- Navigation menu that works
+- Team member cards
+- Portfolio sections
+- Working forms that email clickmedia28@gmail.com
+
+## 🆘 Still Having Issues?
+Open this file in your browser for a visual step-by-step guide:
+```
+/app/frontend/build/DEPLOY_INSTRUCTIONS.html
+```
+
+## 💡 Quick Test
+Before uploading to GitHub, you can test locally:
+1. Download the build folder
+2. Open `index.html` in your browser
+3. You should see the full Click Media website
+4. If you see the website, then uploading to GitHub will work!
+
+---
+
+**Remember:** The files in `/app/frontend/build/` are your complete, ready-to-deploy website. You need to upload THOSE files to GitHub, not the source code from `/app/frontend/src/`.
