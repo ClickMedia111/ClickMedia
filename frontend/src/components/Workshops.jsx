@@ -35,7 +35,7 @@ const Workshops = () => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      const response = await fetch('https://formspree.io/f/xnnordor', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
